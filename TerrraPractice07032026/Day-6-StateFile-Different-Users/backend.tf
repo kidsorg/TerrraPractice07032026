@@ -3,6 +3,6 @@ terraform {
     bucket = "dev-create-2"
     key = "test/terraform.tfstate"
     region = "us-east-1"
-    use_lockfile = false
+    use_lockfile = true
   }
 }
