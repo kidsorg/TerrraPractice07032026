@@ -5,4 +5,11 @@ resource "aws_vpc" "project_vpc" {
     }
   
 }
-
+resource "aws_subnet" "dev_subnet" {
+    vpc_id = aws_vpc.project_vpc.id
+    cidr_block = "10.0.0.0/24"
+    tags = {
+      Name = "dev-subnet"
+    }
+  
+}
