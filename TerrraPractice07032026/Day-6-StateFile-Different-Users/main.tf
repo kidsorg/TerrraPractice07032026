@@ -13,3 +13,11 @@ resource "aws_subnet" "dev_subnet" {
     }
   
 }
+resource "aws_instance" "dev-instance" {
+    ami = "ami-02dfbd4ff395f2a1b"
+    instance_type = "t2.micro"
+    subnet_id = aws_subnet.dev_subnet.id
+    tags = {
+        Name = "dev-instance"
+    }  
+}

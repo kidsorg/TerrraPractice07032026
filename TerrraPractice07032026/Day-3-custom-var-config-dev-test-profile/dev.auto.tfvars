@@ -1,0 +1,5 @@
+dev_ami_id = "ami-03caad32a158f72db"
+dev_instance_type = "t2.micro"
+dev_vpc_cidr = "10.10.0.0/16"
+dev_subnet_1_cidr = "10.10.1.0/24"
+dev_subnet_2_cidr = "10.10.2.0/24"
